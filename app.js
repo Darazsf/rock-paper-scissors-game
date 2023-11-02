@@ -22,6 +22,7 @@ let winDom=document.querySelector(".win-round")
 let looseDom=document.querySelector(".loose-round")
 let drawDom=document.querySelector(".draw-round")
 let sajatDom=document.querySelector(".sajat")
+let valaszDom=document.querySelector('.valasz')
 
 let szam = 3
 idoDOM.innerHTML = szam
@@ -44,6 +45,9 @@ function ido() {
         clearInterval(interV)
         vesztes = vesztes + 1
         looseDom.innerHTML="Vesztett körök :" + vesztes
+        valaszDom.style.display='none'
+        ujraDOM.style.display = 'block';
+        
     }
 }
 
@@ -73,6 +77,8 @@ startDOM.addEventListener('click', () => {
     interV = setInterval(ido, 1000)
     choose()
     startDOM.style.display = 'none';
+    valaszDom.style.display='block'
+    
  
 
 })
@@ -85,6 +91,8 @@ valasztasDOM.forEach(button => {
         eredmeny = event.target.innerHTML
         vegeredmeny(eredmeny)
         ujraDOM.style.display='inline-block'
+        valaszDom.style.display='none'
+        
         
     });
 });

@@ -1,3 +1,6 @@
+body{
+    background-color: darkslategray;
+}
 
 .main{
     margin: 10rem auto;
@@ -13,7 +16,7 @@
 .gep .sajat{
   font-size: 20px;
   color:white;
-  text-align: center;
+ 
   
 }
 .btn{
@@ -52,4 +55,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+.valasz{
+    display: none;
 }
