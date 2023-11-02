@@ -1,0 +1,55 @@
+
+.main{
+    margin: 10rem auto;
+    text-align: center;
+    width: 500px;
+    height: min-content;
+    background-color: #bec3c7;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 5px;
+    
+}
+.gep .sajat{
+  font-size: 20px;
+  color:white;
+  text-align: center;
+  
+}
+.btn{
+    color: aliceblue;
+    margin: 1rem;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: rgb(39, 40, 41);
+    
+}
+.start{
+    font-size: 20px;
+}
+.win{
+    color: greenyellow;
+    font-size: 25px;
+}
+.loose{
+    color: red;
+    font-size: 25px;
+}
+.tied{
+    color: black;
+    font-size: 25px;
+}
+.ujra{
+    display: none;
+    
+}
+.ido{
+    font-size: xx-large;
+    color:#36b64f
+}
+.eredmeny{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
