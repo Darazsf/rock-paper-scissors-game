@@ -51,11 +51,8 @@ body{
     font-size: xx-large;
     color:#36b64f
 }
-.eredmeny{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+
+
 .valasz{
     display: none;
 }
