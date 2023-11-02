@@ -34,19 +34,21 @@ let nyert = 0
 let vesztes = 0
 let draw =0
 
-
+if(szam<2){
+    idoDOM.classList.add("red")
+}
 
 
 function ido() {
     szam = szam - 1
     idoDOM.innerHTML = szam
-    if (szam === 0) {
+    if (szam === -1) {
         alert("Lejárt az időd! Vesztettél!")
         clearInterval(interV)
         vesztes = vesztes + 1
         looseDom.innerHTML="Vesztett körök :" + vesztes
         valaszDom.style.display='none'
-        ujraDOM.style.display = 'block';
+        ujraDOM.style.display = 'inline-block';
         
     }
 }
