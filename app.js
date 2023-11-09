@@ -28,7 +28,7 @@ let szam = 3
 idoDOM.innerHTML = szam
 
 
-let generalt = choose()
+let generalt = ""
 let interV;
 let nyert = 0
 let vesztes = 0
@@ -56,8 +56,10 @@ function ido() {
 function choose() {
     let select = ['Kő', 'Papír', 'Olló'];
     let index = Math.floor(Math.random() * select.length)
+    generalt=select[index]
     console.log(select[index])
-    return select[index]
+    return generalt
+   
 }
 
 ujraDOM.addEventListener('click', () =>{
